@@ -1,0 +1,34 @@
+{
+    "name": "teesbutterdough",
+    "codeName": "TBD",
+    "productName": "Teesbutterdough",
+    "version": "1.0.0",
+    "description": "We offer an exquisite range of delicious baked goods, pastries and catering services that are sure to tantalize your taste buds.",
+    "icon": "./assets/logo/",
+    "keywords": [
+        "Bakery",
+        "Catering",
+        "Food",
+        "Baked goods",
+        "Cupcakes",
+        "Bread",
+        "Croissant",
+        "Pies",
+        "Finger foods",
+        "Canapes",
+        "Sandwiches",
+        "Salads",
+        "Hot dishes",
+        "Customized cakes",
+        "Birthdays",
+        "Weddings",
+        "Special occasions",
+        "Customer Service"
+    ],
+    "author": {
+        "name": "Teesbutterdough",
+        "email": "oluwateniolabakare@gmail.com",
+        "phone": "+2349060112240"
+    },
+    "license": "MIT"
+}
