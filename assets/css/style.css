@@ -5,7 +5,27 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body {
+    overflow-x: hidden;
     background-color: #672972;
+}
+body::-webkit-scrollbar {
+    width: 3px;
+    height: 10px;
+    padding: 20px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #b849cc;
+    border-radius: 20px;
+    margin: 0px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #FEC74B;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #FEC74B;
+}
+a {
+    text-decoration: none;
 }
 .comingsoon {
     position: relative;
@@ -17,5 +37,205 @@ body {
     color: #FFFFFF;
 }
 #origin {
+    display: block;
+}
+#comingsoon {
     display: none;
 }
+.teesbutterdough .header .index {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.teesbutterdough .header {
+    position: relative;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.teesbutterdough .header .index {
+    width: 50%;
+}
+.teesbutterdough .header .index a {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.teesbutterdough .header .index a #brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: Rockwell;
+    font-weight: 400;
+}
+.teesbutterdough .header .nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+}
+.teesbutterdough .header .nav p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teesbutterdough .header .nav p label {
+    font-family: Rockwell;
+    color: #FBD378;
+    font-weight: 400;
+    font-size: 18px;
+}
+.teesbutterdough .menu {
+    position: relative;
+    padding: 20px;
+}
+.teesbutterdough .menu .grid-list {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 50px;
+}
+.teesbutterdough .menu .grid-list .card {
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+    box-sizing: border-box;
+    border: 4px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(225deg, #E040FB 0% 0%, #FEC74B 100% 100%);
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../img/IMG-20230116-WA0046.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.teesbutterdough .menu .grid-list .card::before, .teesbutterdough .menu .grid-list .card::after {
+    z-index: -1;
+    position: absolute;
+    content: " ";
+    bottom: 15px;
+    -webkit-box-shadow: 0 15px 10px #FFFFFF;
+    -moz-box-shadow: 0 15px 10px #FFFFFF;
+    box-shadow: 0 15px 10px #FFFFFF;
+}
+.teesbutterdough .menu .grid-list .card label {
+    color: #FFFFFF;
+    font-family: Rockwell;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#menu {
+    display: none;
+}
+
+.launcher {
+    position: relative;
+    display: block;
+}
+.launcher .main-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+.launcher .main-text #text, .launcher .text-container .text {
+    font-size: 48px;
+    font-family: Rockwell;
+    text-align: center;
+    color: #FFFFFF;
+}
+.launcher .text-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+.launcher .text-container .text {
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: 0.15em solid #FFFFFF;
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+.launcher .text-container .text {
+    color: #FBD378;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #FFFFFF;
+    }
+}
+.launcher .brand-media {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    padding: 20px;
+    z-index: 1;
+}
+.launcher .brand-media .media {
+    position: relative;
+    margin: 10px;
+    border: 10px solid #FBD378;
+    box-sizing: border-box;
+    box-shadow:  10px 10px 0px 0px #E040FB;
+    border-radius: 12px;
+    background-color: rebeccapurple;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/IMG-20230116-WA0046.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.launcher .brand-media .media video {
+    width: 327px;
+    height: 327px;
+    padding: 10px;
+}
+.launcher .brand-media .media video::-webkit-media-control {
+    background-color: #672972;
+}
+.launcher .brand-media .media video::-webkit-media-controls-play-button {
+    background-color: #672972;
+    color: #FBD378;
+    border-radius: 360px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.launcher .brand-media .media video::-webkit-media-controls-time-remaining-display {
+    color: #FEC74B;
+}
+.launcher .brand-media .media video::-webkit-media-controls-volume-slider {
+    width: 50% !important;
+}
+
