@@ -1,8 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Sacramento&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Lora', serif;
 }
 body {
     overflow-x: hidden;
@@ -69,7 +74,6 @@ a {
     margin-left: 10px;
     font-size: 18px;
     color: #FFFFFF;
-    font-family: Rockwell;
     font-weight: 400;
 }
 .teesbutterdough .header .nav {
@@ -86,7 +90,6 @@ a {
     justify-content: center;
 }
 .teesbutterdough .header .nav p label {
-    font-family: Rockwell;
     color: #FBD378;
     font-weight: 400;
     font-size: 18px;
@@ -152,7 +155,6 @@ a {
 }
 .launcher .main-text #text, .launcher .text-container .text {
     font-size: 48px;
-    font-family: Rockwell;
     text-align: center;
     color: #FFFFFF;
 }
