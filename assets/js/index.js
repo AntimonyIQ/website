@@ -1,4 +1,4 @@
-const text = ["Connoisseurs", "Cognoscente", "Maven"];
+const text = ["Delights", "Scrumptious", "Handcrafted"];
 
 let index = 0;
 let charIndex = 0;
